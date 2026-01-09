@@ -1,0 +1,7 @@
+{
+  "platformName": "Android",
+  "platformVersion": "16",
+  "deviceName": "emulator-5554",
+  "automationName": "UiAutomator2",
+  "app": "/Users/jfranccr/Documents/app-dev-debug.apk"
+}

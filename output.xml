@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.4 on darwin)" generated="2025-09-03T22:33:50.431593" rpa="false" schemaversion="5">
+<suite id="s1" name="Android Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests/android_tests">
+<suite id="s1-s1" name="Android Home Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests/android_tests/android_home_tests.robot">
+<test id="s1-s1-t1" name="MARTGNM-T379 Validar &quot;GO TO APPROVALS&quot; tela home" line="8">
+<kw name="Abrir Aplicativo Android Local" type="SETUP">
+<msg time="2025-09-03T22:33:50.490730" level="FAIL">No keyword with name 'Abrir Aplicativo Android Local' found.</msg>
+<status status="FAIL" start="2025-09-03T22:33:50.490630" elapsed="0.000243">No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</kw>
+<tag>home_tests</tag>
+<status status="FAIL" start="2025-09-03T22:33:50.488331" elapsed="0.003003">Setup failed:
+No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</test>
+<test id="s1-s1-t2" name="MARTGNM-T440 Validar que ao clicar na aba &quot;Alerts&quot; na pagina home seja direcionado para tela &quot;alerts&quot;" line="24">
+<kw name="Abrir Aplicativo Android Local" type="SETUP">
+<msg time="2025-09-03T22:33:50.493408" level="FAIL">No keyword with name 'Abrir Aplicativo Android Local' found.</msg>
+<status status="FAIL" start="2025-09-03T22:33:50.493349" elapsed="0.000118">No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</kw>
+<tag>home_tests</tag>
+<status status="FAIL" start="2025-09-03T22:33:50.491936" elapsed="0.001749">Setup failed:
+No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</test>
+<test id="s1-s1-t3" name="MARTGNM-T441 Validar seção Tools &quot;Social Radar&quot;" line="42">
+<kw name="Abrir Aplicativo Android Local" type="SETUP">
+<msg time="2025-09-03T22:33:50.494716" level="FAIL">No keyword with name 'Abrir Aplicativo Android Local' found.</msg>
+<status status="FAIL" start="2025-09-03T22:33:50.494681" elapsed="0.000076">No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</kw>
+<tag>home_tests</tag>
+<status status="FAIL" start="2025-09-03T22:33:50.493933" elapsed="0.000978">Setup failed:
+No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</test>
+<test id="s1-s1-t4" name="MARTGNM-T442 Validar seção View All Alerts" line="60">
+<kw name="Abrir Aplicativo Android Local" type="SETUP">
+<msg time="2025-09-03T22:33:50.495922" level="FAIL">No keyword with name 'Abrir Aplicativo Android Local' found.</msg>
+<status status="FAIL" start="2025-09-03T22:33:50.495882" elapsed="0.000083">No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</kw>
+<tag>home_tests</tag>
+<status status="FAIL" start="2025-09-03T22:33:50.495141" elapsed="0.001057">Setup failed:
+No keyword with name 'Abrir Aplicativo Android Local' found.</status>
+</test>
+<status status="FAIL" start="2025-09-03T22:33:50.486621" elapsed="0.010344"/>
+</suite>
+<status status="FAIL" start="2025-09-03T22:33:50.433357" elapsed="0.064415"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="4" skip="0">home_tests</stat>
+</tag>
+<suite>
+<stat name="Android Tests" id="s1" pass="0" fail="4" skip="0">Android Tests</stat>
+<stat name="Android Home Tests" id="s1-s1" pass="0" fail="4" skip="0">Android Tests.Android Home Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-03T22:33:50.487610" level="ERROR">Error in file '/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests/android_tests/android_home_tests.robot' on line 3: Resource file 'main_resources.robot' does not exist.</msg>
+</errors>
+</robot>

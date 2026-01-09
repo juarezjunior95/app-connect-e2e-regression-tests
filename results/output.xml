@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.4 on darwin)" generated="2025-09-08T20:38:32.261348" rpa="false" schemaversion="5">
+<suite id="s1" name="App-Connect-E2E-Regression-Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests">
+<suite id="s1-s1" name="Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests">
+<suite id="s1-s1-s1" name="Android Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests/android_tests">
+<suite id="s1-s1-s1-s1" name="Android Home Tests" source="/Users/jfranccr/Documents/app-connect-e2e-regression-tests/tests/android_tests/android_home_tests.robot">
+<test id="s1-s1-s1-s1-t1" name="MARTGNM-T384 Validar seção education no canto inferior da tela" line="93">
+<kw name="Abrir Aplicativo Android Local" owner="android_login_page" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>app=${APP}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-09-08T20:38:32.755096" elapsed="75.694063"/>
+</kw>
+<status status="PASS" start="2025-09-08T20:38:32.753475" elapsed="75.696213"/>
+</kw>
+<kw name="Acessar app connect android" owner="android_login_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-09-08T20:40:00.650306" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button
+criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
+<arg>id=${ALLOW_BUTTON}</arg>
+<arg>20s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-09-08T20:39:48.451800" elapsed="12.200050"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-09-08T20:40:00.657502" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<msg time="2025-09-08T20:40:01.111909" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
+<arg>id=${ALLOW_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-09-08T20:40:00.652664" elapsed="0.459775"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-09-08T20:40:07.169195" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316c7c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<msg time="2025-09-08T20:40:07.181484" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316caf0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<msg time="2025-09-08T20:40:07.193929" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316c9e0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-09-08T20:40:07.215761" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d590&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.231766" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316dae0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.254537" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316de10&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.269391" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d8c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-09-08T20:40:07.213470" elapsed="0.183516">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d8c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<msg time="2025-09-08T20:40:07.399810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d8c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<msg time="2025-09-08T20:40:07.487589" level="INFO">xpath criteria: //android.widget.TextView[@text="Sign in with Email"]
+xpath criteria: //android.widget.TextView[@text="Sign in with Email"]
+xpath criteria: //android.widget.TextView[@text="Sign in with Email"]
+xpath criteria: //android.widget.TextView[@text="Sign in with Email"]
+xpath criteria: //android.widget.TextView[@text="Sign in with Email"]
+xpath criteria: //android.widget.TextView[@text="Sign in with Email"]</msg>
+<msg time="2025-09-08T20:40:07.490803" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316cc00&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${BUTTON_SIGNiN}</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2025-09-08T20:40:01.112806" elapsed="6.404074">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316cc00&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${BUTTON_SIGNiN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.517362" elapsed="0.000288"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${FIELD_EMAIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.517966" elapsed="0.000292"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>${FIELD_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.518673" elapsed="0.000401"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${FIELD_PASSWORD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.519380" elapsed="0.000340"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>${FIELD_PASSWORD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.520097" elapsed="0.000264"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${BUTTON_SIGIN_WITH_EMAIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.520850" elapsed="0.000359"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>time_=3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.521535" elapsed="0.000238"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>${EXPECTED_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" start="2025-09-08T20:40:07.522120" elapsed="0.000315"/>
+</kw>
+<arg>EMAIL=juares.junior-ext@ab-inbev.com</arg>
+<arg>PASSWORD=QA@12345</arg>
+<arg>EXPECTED_MESSAGE=Welcome</arg>
+<status status="FAIL" start="2025-09-08T20:39:48.450401" elapsed="19.072367">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316cc00&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Validar que seguintes abas estao sendo exibidas na tela home" owner="android_login_page">
+<arg>PAGE_HOME=Home</arg>
+<arg>PAGE_SOCIAL-RADAR=Social Radar</arg>
+<arg>PAGE_INFLUENCERS=Influencers</arg>
+<arg>PAGE_ALERTS=Alerts</arg>
+<arg>PAGE_VIEW-MORE=View More</arg>
+<status status="NOT RUN" start="2025-09-08T20:40:07.523467" elapsed="0.000324"/>
+</kw>
+<kw name="Ir para tela de Education" owner="android_home_page">
+<status status="NOT RUN" start="2025-09-08T20:40:07.524317" elapsed="0.000319"/>
+</kw>
+<kw name="Entao deve ser exibida as seguintes abas.." owner="android_home_page">
+<arg>Policies &amp; Process</arg>
+<arg>Social Radar</arg>
+<arg>Influencers</arg>
+<arg>Alerts</arg>
+<status status="NOT RUN" start="2025-09-08T20:40:07.525233" elapsed="0.000349"/>
+</kw>
+<kw name="Swipe até o elemento esta visivel" owner="android_home_page">
+<arg>${TEXTO_EDUCATION}</arg>
+<status status="NOT RUN" start="2025-09-08T20:40:07.526542" elapsed="0.000837"/>
+</kw>
+<tag>home_tests</tag>
+<status status="FAIL" start="2025-09-08T20:38:32.740465" elapsed="94.787776">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316cc00&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<status status="FAIL" start="2025-09-08T20:38:32.329758" elapsed="95.218637"/>
+</suite>
+<status status="FAIL" start="2025-09-08T20:38:32.323528" elapsed="95.237452"/>
+</suite>
+<status status="FAIL" start="2025-09-08T20:38:32.312519" elapsed="95.259380"/>
+</suite>
+<status status="FAIL" start="2025-09-08T20:38:32.268144" elapsed="95.311214"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">home_tests</stat>
+</tag>
+<suite>
+<stat name="App-Connect-E2E-Regression-Tests" id="s1" pass="0" fail="1" skip="0">App-Connect-E2E-Regression-Tests</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">App-Connect-E2E-Regression-Tests.Tests</stat>
+<stat name="Android Tests" id="s1-s1-s1" pass="0" fail="1" skip="0">App-Connect-E2E-Regression-Tests.Tests.Android Tests</stat>
+<stat name="Android Home Tests" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">App-Connect-E2E-Regression-Tests.Tests.Android Tests.Android Home Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-08T20:40:07.169195" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316c7c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<msg time="2025-09-08T20:40:07.181484" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316caf0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<msg time="2025-09-08T20:40:07.193929" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316c9e0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/elements</msg>
+<msg time="2025-09-08T20:40:07.215761" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d590&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.231766" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316dae0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.254537" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316de10&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot</msg>
+<msg time="2025-09-08T20:40:07.399810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/4da3f0e6-237f-464a-8c57-c1828fd8ad1b/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10316d8c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+</errors>
+</robot>
