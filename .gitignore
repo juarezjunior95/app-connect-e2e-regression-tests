@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+log.html
+output.xml
+report.html
+results/
+.DS_Store
+.idea/
+erro.log
+apps/android/*.apk
